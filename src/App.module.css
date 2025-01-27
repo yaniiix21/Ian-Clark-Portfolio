@@ -1,7 +1,12 @@
 @import "./vars.css";
 
 .App {
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg);
+  background: rgb(101,6,48);
+  background: radial-gradient(circle, rgba(101,6,48,1) 0%, rgba(11,59,115,1) 100%); */
+  background-image: url("/assets/background/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;

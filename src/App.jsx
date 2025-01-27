@@ -1,10 +1,13 @@
+import React from "react";
 import styles from "./App.module.css";
 import { About } from "./components/About/About";
-import { Contact } from "./components/Contact/Contact";
+import { Footer } from "./components/Footer/Footer";
 import { Experience } from "./components/Experience/Experience";
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
+import { Profile } from "./components/Profile/Profile";
+import { Contact} from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -13,8 +16,10 @@ function App() {
       <Hero />
       <About />
       <Experience />
-      <Projects />
+      {/* <Projects /> */}
+      <Profile />
       <Contact />
+      <Footer />
     </div>
   );
 }

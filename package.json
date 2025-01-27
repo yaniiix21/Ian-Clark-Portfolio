@@ -3,17 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "src/main.jsx",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build,react-scripts build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@fontsource/outfit": "^5.0.8",
     "@fontsource/roboto": "^5.0.8",
+    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -24,5 +30,17 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "vite": "^4.4.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
