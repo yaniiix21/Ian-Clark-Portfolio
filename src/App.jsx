@@ -5,7 +5,6 @@ import { Footer } from "./components/Footer/Footer";
 import { Experience } from "./components/Experience/Experience";
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
 import { Profile } from "./components/Profile/Profile";
 import { Contact} from "./components/Contact/Contact";
 
@@ -16,7 +15,6 @@ function App() {
       <Hero />
       <About />
       <Experience />
-      {/* <Projects /> */}
       <Profile />
       <Contact />
       <Footer />
