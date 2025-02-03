@@ -15,7 +15,7 @@ export const Profile = () => {
               Here is some more info about myself to help you get to know me
               better.
             </p>
-            <ul className={`${styles.profile}`}>
+            <ul className={`${styles.profileItems}`}>
             {profile.map((profileItem, id) => {
             return (
                 <li key={id} className={`${styles.profileItem} spacer mb-3`}>

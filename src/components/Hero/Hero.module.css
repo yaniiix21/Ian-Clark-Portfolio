@@ -11,6 +11,23 @@
   margin-right: 10%;
 }
 
+.container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container img {
+    width: 80%;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: column;

@@ -4,12 +4,13 @@
     position: relative;
     background-color: rgba(12, 12, 12, 0.6);
     border-radius: 15px;
-    padding: 73px;
-    margin-top: 129px;
+    padding: 5vw;
+    margin-top: 10vh;
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .content {
@@ -36,6 +37,7 @@
     font-size: 22px;
 }
 .profileItem {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 17px;
@@ -45,6 +47,9 @@
     padding: 15px;
     text-align:left;
   }
+.profileItem p {
+    font-size: 25px;
+}
 
 .content p{
     font-size: 29px;
@@ -56,3 +61,35 @@
     margin-bottom: 50px;
   }
   
+  @media screen and (max-width: 425px) {
+    .container {
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .content {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+    .profileItems {
+      margin-top: 29px;
+    }
+  
+    .profileItem {
+      padding-left: 0;
+      padding-right: 0;
+      word-wrap: break-word; 
+      overflow-wrap: break-word; 
+      max-width: 90%;
+      border-radius: 10px;
+    }
+    .profileItem p, 
+    .profileItem h1, 
+    .profileItem h2 {
+        font-size: clamp(1rem, 4vw, 1.8rem); 
+        line-height: 1.5;
+       }
+  }
