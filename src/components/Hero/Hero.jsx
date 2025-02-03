@@ -4,7 +4,7 @@ import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
   const [typedText, setTypedText] = useState(""); 
-  const fullText = " Hi I am Ian Clark Villegas";
+  const fullText = "  Hi I am Ian Clark Villegas";
   const typingDelay = 80;
   const pauseBeforeRestart = 10000; 
 

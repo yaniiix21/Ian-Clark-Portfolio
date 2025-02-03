@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Profile.module.css";
 import profile from "../../data/profile.json"
-import resume from "../../../assets/resume/resume.docx"
+import resume from "../../../assets/resume/resume.pdf"
 
 export const Profile = () => {
   return (
@@ -9,8 +9,8 @@ export const Profile = () => {
       <div className={styles.container}>
       <h2 className={styles.title}>Profile</h2>
         <div className="row">
-          <div className="col-md-6">
-            <h3 className="text-uppercase fw-bold">Details</h3>
+          <div className={`${styles.content} col`}>
+            <h3 className={`${styles.details} text-uppercase fw-bold`}>Details</h3>
             <p>
               Here is some more info about myself to help you get to know me
               better.
@@ -28,14 +28,13 @@ export const Profile = () => {
             })}
             </ul>
           </div>
-          <div className="col-md-6">
+          <div className={`${styles.content} col`}>
             <h3 className="text-uppercase fw-bold">Skills</h3>
             <p>
               Here is a list of my skills with these dumb percentages that don't
               mean anything 😉
             </p>
             {[
-                
               { skill: "HTML 5", level: "100%" },
               { skill: "CSS", level: "90%" },
               { skill: "JavaScript", level: "90%" },
