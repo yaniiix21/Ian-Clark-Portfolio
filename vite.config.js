@@ -12,9 +12,10 @@ export default defineConfig({
       main: './index.html',
     },
   },
-  // css: {
-  //   modules: {
-  //     localsConvention: "camelCase",
-  //   },
-  // },
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+    },
+  },
+  assetsInclude: ['**/*.docx']
 });

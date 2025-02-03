@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Profile.module.css";
 import profile from "../../data/profile.json"
+import resume from "../../../assets/resume/resume.docx"
 
 export const Profile = () => {
   return (
@@ -68,7 +69,7 @@ export const Profile = () => {
         <div className= "row mt-5 text-center">
           <div className="col-12">
             <a
-              href="../../../assets/resume/resume.docx"
+              href= {resume}
               className="btn btn-info btn-lg text-uppercase px-5 mx-3 my-2"
               download
             >
