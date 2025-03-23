@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Profile.module.css";
 import profile from "../../data/profile.json"
-import resume from "../../../assets/resume/resume.pdf"
+import resume from "../../../assets/resume/Ian-Clark-Villegas-Resume.pdf"
 
 export const Profile = () => {
   return (
